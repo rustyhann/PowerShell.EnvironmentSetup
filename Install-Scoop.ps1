@@ -83,7 +83,7 @@ Process {
     # Rust
     scoop install 'rust'
     scoop install 'rustup'
-    scoop install 'rusty-msvc'
+    scoop install 'rust-msvc'
 
     # Java
     scoop install 'openjdk'

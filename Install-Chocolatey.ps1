@@ -34,6 +34,10 @@ Process {
     # MSBuild Tools
     choco install -y 'visualstudio2017buildtools'
     choco install -y 'visualstudio2019buildtools'
+
+    # LogParser
+    choco install -y 'logparser'
+    choco install -y 'logparserstudio'
 }
 End {
     Set-Location -Path $start
