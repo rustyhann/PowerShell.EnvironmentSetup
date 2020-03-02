@@ -9,7 +9,7 @@ Begin {
 Process {
     try {
         # Find a better means of testing if chocolatey is installed
-        choco /?
+        choco /? | Out-Null
     }
     catch{
         Set-ExecutionPolicy -ExecutionPolicy 'RemoteSigned' -Scope Process
@@ -34,17 +34,6 @@ Process {
     # MSBuild Tools
     choco install -y 'visualstudio2017buildtools'
     choco install -y 'visualstudio2019buildtools'
-
-    # Azure
-    choco install -y 'azure-documentdb-emulator'
-    choco install -y 'azurestorageemulator'
-
-    # Log Parser
-    choco install -y 'logparser'
-    choco install -y 'logparserstudio'
-
-    # Jekyll
-    choco install -y 'jekyll'
 }
 End {
     Set-Location -Path $start
