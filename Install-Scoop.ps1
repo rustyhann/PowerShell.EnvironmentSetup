@@ -22,13 +22,6 @@ Process {
     # Base packages
     scoop install '7zip'
     scoop install 'git'
-    scoop install 'git-lfs'
-
-    # Dependencies
-    scoop install 'vcredist'
-    scoop install 'dotnet'
-    scoop install 'dotnet-sdk'
-    scoop install 'dotnet-sdk-lts'
 
     # PowerShell Core
     scoop install 'pwsh'
@@ -37,57 +30,20 @@ Process {
     scoop install 'windows-terminal'
 
     # Vagrant
-    scoop install 'portable-virtualbox'
     scoop install 'vagrant'
 
     # Docker
     scoop install 'docker'
     scoop install 'docker-compose'
     scoop install 'docker-machine'
-    scoop install 'posh-docker'
 
     # Browsers and Email
-    scoop install 'opera'
     scoop install 'firefox'
     scoop install 'thunderbird'
 
-    # Tools
-    scoop install 'sysinternals'
-
-    # Jekyll
-    scoop install 'ruby'
-    Invoke-Expression -Command 'ridk install 3'
-    Invoke-Expression -Command 'gem install jekyll bundler'
-
-    # Python
-    # Anaconda includes Python
-    scoop install 'anaconda3'
-
-    # R
-    # RStudio includes R
-    scoop install 'rstudio'
-
-    # Azure Tools
-    scoop install 'azure-ps'
-    scoop install 'azure-cli'
-    scoop install 'azuredatastudio'
-    scoop install 'azure-functions-core-tools'
-    scoop install 'storageexplorer'
-
-    # MSBuild
-    scoop install 'msbuild-structgured-log-viewer'
-
-    # Go
-    scoop install 'go'
-
-    # Rust
-    scoop install 'rust'
-    scoop install 'rustup'
-    scoop install 'rust-msvc'
-
-    # Java
-    scoop install 'openjdk'
-    # scoop install 'oraclejdk'
+    # Fun
+    scoop install steam
+    scoop install discord
 }
 End {
     Set-Location -Path $start
